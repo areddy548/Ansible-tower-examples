@@ -1,0 +1,6 @@
+---
+- name: Create a new database with name 'bobdata'
+  hosts: 127.0.0.1
+  community.mysql.mysql_db:
+    name: bobdata
+    state: present
