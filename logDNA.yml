@@ -13,7 +13,7 @@
   tasks:
     - name: Download kubeconfig
       get_url:
-          url: https://containers.cloud.ibm.com/global/v1/clusters/{{ cluster_id }}/config
+          url: https://containers.test.cloud.ibm.com/global/v1/clusters/{{ cluster_id }}/config
           dest: "{{ zip_path }}"
           headers: 
             Authorization: "{{ lookup('env','IC_IAM_TOKEN') }}"
