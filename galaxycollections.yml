@@ -1,6 +1,9 @@
 ---
-- name: Create a new database with name 'bobdata'
-  hosts: 127.0.0.1
-  community.mysql.mysql_db:
-    name: bobdata
-    state: present
+- hosts: 127.0.0.1
+  tasks:
+    - launchdarkly_labs.collection.launchdarkly_feature_flag:
+        name: example
+        kind: bool
+        state: present
+        temporary: false
+        key: example_flag_creation
