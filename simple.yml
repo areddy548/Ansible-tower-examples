@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: webserver1 webserver2
 
   tasks:
     - name: This is a hello-world example
