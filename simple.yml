@@ -1,6 +1,6 @@
 ---
 
-- hosts: webserver1 webserver2
+- hosts: BACK_NIC_IP FRONT_NIC_IP
 
   tasks:
     - name: This is a hello-world example
